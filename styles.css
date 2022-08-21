@@ -1,0 +1,265 @@
+body{
+  background-color: #fbf3e4;
+}
+h1.name{
+  font-family: 'Brittany Signature', sans-serif;
+  color: #b91646;
+  font-size: 5.5vw;
+  text-align: center;
+  margin-bottom: 4%;
+}
+h1.profession{
+  font-family: 'Bebas Neue';
+  font-size: 7vw;
+  text-align: center;
+}
+.line{
+  height: 3px;
+  background-color: black;
+  text-align: center;
+}
+.homePage{
+  margin-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Buttons  */
+.workExperienceButton{
+
+}
+.contactButton{
+
+}
+.aboutButton,.portfolioButton{
+  color: #fbf3e4;
+  background: #b91646;
+  background-image: -webkit-linear-gradient(top, #b91646, #b91646);
+  background-image: -moz-linear-gradient(top, #b91646, #b91646);
+  background-image: -ms-linear-gradient(top, #b91646, #b91646);
+  background-image: -o-linear-gradient(top, #b91646, #b91646);
+  background-image: linear-gradient(to bottom, #b91646, #b91646);
+}
+.certificateButton,.contactButton{
+  color:#fbf3e4;
+  background:#105652;
+  background-image: -webkit-linear-gradient(top, #105652, #105652);
+  background-image: -moz-linear-gradient(top, #105652, #105652);
+  background-image: -ms-linear-gradient(top, #105652, #105652);
+  background-image: -o-linear-gradient(top, #105652, #105652);
+  background-image: linear-gradient(to bottom, #105652, #105652);
+}
+.personalSkillButton,.workExperienceButton{
+  color:black;
+  background:#f9c041;
+  background-image: -webkit-linear-gradient(top, #f9c041, #f9c041);
+  background-image: -moz-linear-gradient(top, #f9c041, #f9c041);
+  background-image: -ms-linear-gradient(top, #f9c041, #f9c041);
+  background-image: -o-linear-gradient(top, #f9c041, #f9c041);
+  background-image: linear-gradient(to bottom, #f9c041, #f9c041);
+}
+.portfolioButton{
+
+}
+.btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 2px;
+  font-size: 20px;
+  padding: 0;
+  width: 320px;
+  border: solid black 3px;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+.c{
+  text-align: center;
+  margin-top: 1px;
+}
+.row.home{
+  margin-top: 3.5%;
+}
+
+/* Animated Arrow */
+.the-arrow {
+  width: 1px;
+  transition: all 0.2s;
+}
+.the-arrow.-left {
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+.the-arrow.-left > .shaft {
+  width: 0;
+  background-color: #4c4c4c;
+}
+.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+  width: 0;
+  background-color: #4c4c4c;
+}
+.the-arrow.-left > .shaft:before {
+  transform: rotate(0);
+}
+.the-arrow.-left > .shaft:after {
+  transform: rotate(0);
+}
+.the-arrow.-right {
+  top: 3px;
+}
+.the-arrow.-right > .shaft {
+  width: 1px;
+  transition-delay: 0.2s;
+}
+.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+  width: 8px;
+  transition-delay: 0.3s;
+  transition: all 0.5s;
+}
+.the-arrow.-right > .shaft:before {
+  transform: rotate(40deg);
+}
+.the-arrow.-right > .shaft:after {
+  transform: rotate(-40deg);
+}
+.the-arrow > .shaft {
+  background-color: #4c4c4c;
+  display: block;
+  height: 1px;
+  position: relative;
+  transition: all 0.2s;
+  transition-delay: 0;
+  will-change: transform;
+}
+.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+  background-color: #4c4c4c;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s;
+  transition-delay: 0;
+}
+.the-arrow > .shaft:before {
+  transform-origin: top right;
+}
+.the-arrow > .shaft:after {
+  transform-origin: bottom right;
+}
+
+.animated-arrow {
+  display: inline-block;
+  color: #4c4c4c;
+  font-size: 1.25em;
+  font-style:'Bebas Neue';
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s;
+}
+.animated-arrow:hover {
+  color: #808080;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft {
+  width: 64px;
+  transition-delay: 0.1s;
+  background-color: #808080;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  width: 8px;
+  transition-delay: 0.1s;
+  background-color: #808080;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before {
+  transform: rotate(40deg);
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  transform: rotate(-40deg);
+}
+.animated-arrow:hover > .main {
+  transform: translateX(17px);
+  transform: translateX(80px);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
+  width: 0;
+  transform: translateX(200%);
+  transition-delay: 0;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+  width: 0;
+  transition-delay: 0;
+  transition: all 0.1s;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
+  transform: rotate(0);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+  transform: rotate(0);
+}
+.animated-arrow > .main {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+.animated-arrow > .main > .text {
+  margin: 0 16px 0 0;
+  line-height: 1;
+}
+.animated-arrow > .main > .the-arrow {
+  position: relative;
+}
+
+/* navbar */
+.navbar{
+  margin-top: 7%;
+}
+.navbar-brand,.text,.navbarRightContent{
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+}
+
+/* Apout page */
+.aboutPage{
+  background-color: #e6ccb2;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.aboutNavbar{
+  padding-top:6%;
+}
+.aboutMeIntro{
+  font-family: 'Brittany Signature', sans-serif;
+  color: #b91646;
+  font-size: 4.5vw;
+  margin-bottom: 0;
+}
+.aboutMePara1{
+  font-family: 'Bebas Neue';
+  font-size: 5vw;
+  letter-spacing: 2px;
+}
+.aboutMepara2{
+  font-family: 'Poppins';
+}
+.aboutMeCommonNavbar{
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+.aboutMeRow1{
+  margin-top: 7%;
+}
+.circleGraphic{
+  position: fixed;
+  top:0;
+}
